@@ -2,7 +2,6 @@ import numexpr as ne
 
 # source: http://www.neercartography.com/latitudelongitude-tofrom-web-mercator/
 def toWebMercator(xLon, yLat):
-    return True
     semimajorAxis = 6378137.0  # WGS84 spheriod semimajor axis
     east = ne.evaluate("xLon * 0.017453292519943295")
     north = ne.evaluate("yLat * 0.017453292519943295")
@@ -14,9 +13,6 @@ def toWebMercator(xLon, yLat):
 
 # source: http://stackoverflow.com/questions/33295120/
 #                   how-to-generate-gif-256-colors-palette/33295456#33295456
-# def mega_color():
-#     return True
-
 mega_color = [
     "#000000", "#FFFF00", "#1CE6FF", "#FF34FF", "#FF4A46", "#008941", "#006FA6", "#A30059",
     "#FFDBE5", "#7A4900", "#0000A6", "#63FFAC", "#B79762", "#004D43", "#8FB0FF", "#997D87",
